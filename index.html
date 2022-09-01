@@ -7,12 +7,35 @@
       src="https://kit.fontawesome.com/3162f5d9b2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitescodes</title>
   </head>
   <body>
+    <!-- start up -->
+    <div class="up">
+      <i class="fa-solid fa-up-long"></i>
+    </div>
+    <!-- start up -->
+    <!-- start loader -->
+    <div class="loader">
+      <div class="glitch" data-text="SITESCODES">SITESCODES</div>
+      <div id="loader-4">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- end loader -->
     <!-- start  cursor  -->
     <div id="circle"><div></div></div>
     <!-- end  cursor  -->
@@ -24,12 +47,13 @@
           <span>Sitescodes</span>
         </a>
         <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Order</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Why SITESCODES ?</a></li>
-          <li><a href="">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="why.html">Why SITESCODES ?</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><i class="dark fa-solid fa-circle-half-stroke"></i></li>
         </ul>
         <i class="menu fa-solid fa-bars"></i>
@@ -46,7 +70,7 @@
             intuitive way to imagine your next user experience.
           </p>
           <div class="links">
-            <a href="">Get started</a>
+            <a href="contact.html">Get started</a>
             <button class="open-video">
               <i class="fa-solid fa-play"></i> Watch the Video
             </button>
@@ -66,19 +90,19 @@
     <section class="services">
       <h2 class="headline">What We Offer</h2>
       <div class="container">
-        <div class="box">
+        <div data-aos="fade-right" class="box aos-init aos-animate">
           <i class="fa-solid fa-bezier-curve"></i>
           <p>Web Design</p>
           <p>Make Your Website Design Cool.</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-up" class="box aos-init aos-animate">
           <i class="fa-solid fa-window-restore"></i>
           <p>Front-end Development</p>
           <p>
             Design The Interface That The Customer Sees, Make It Impressive.
           </p>
         </div>
-        <div class="box">
+        <div data-aos="fade-left" class="box aos-init aos-animate">
           <i class="fas fa-solid fa-gears"></i>
           <p>Back-end Development</p>
           <p>
@@ -86,7 +110,7 @@
             It Well.
           </p>
         </div>
-        <div class="box">
+        <div data-aos="fade-right" class="box aos-init aos-animate">
           <i class="fa-solid fa-layer-group"></i>
           <p>Full Stack Web Development</p>
           <p>
@@ -94,7 +118,7 @@
             Compatible.
           </p>
         </div>
-        <div class="box">
+        <div data-aos="fade-left" class="box aos-init aos-animate">
           <i class="fas fa-solid fa-server"></i>
           <p>Hosting & Domains</p>
           <p>
@@ -110,56 +134,157 @@
     <section class="skills">
       <h2 class="headline">Skills</h2>
       <div class="container">
-        <div class="box">
-          <img src="images/html5 (1).png" alt="" />
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
+          <img src="images/html.png" alt="html" />
           <div class="headline">
             <div class="top-line">HTML5</div>
             <div class="mid-line"></div>
           </div>
         </div>
-        <div class="box">
-          <img src="images/html5 (1).png" alt="html" />
-        </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/css3.png" alt="css" />
+          <div class="headline">
+            <div class="top-line">CSS3</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
+          <img src="images/javascript.png" alt="javascript" />
+          <div class="headline">
+            <div class="top-line">JavaScript</div>
+            <div class="mid-line"></div>
+          </div>
+        </div>
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/bootstrap.png" alt="bootstrap" />
+          <div class="headline">
+            <div class="top-line">Bootstrap</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/php.png" alt="php" />
+          <div class="headline">
+            <div class="top-line">php</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/sql.png" alt="sql" />
+          <div class="headline">
+            <div class="top-line">SQL</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/postgresql.png" alt="postgresql" />
+          <div class="headline">
+            <div class="top-line">Postgresql</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/python.png" alt="python" />
+          <div class="headline">
+            <div class="top-line">Python</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/djangoproject.png" alt="djangoproject" />
+          <div class="headline">
+            <div class="top-line">Django</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/api.png" alt="api" />
+          <div class="headline">
+            <div class="top-line">API</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/git.png" alt="git" />
+          <div class="headline">
+            <div class="top-line">Git</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/mysql.png" alt="mysql" />
+          <div class="headline">
+            <div class="top-line">Mysql</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/adobe-photoshop.png" alt="photoshop" />
+          <div class="headline">
+            <div class="top-line">Photoshop</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
-        <div class="box">
+        <div class="box aos-init aos-animate" data-aos="zoom-in">
           <img src="images/adobe-illustrator.png" alt="illustrator" />
+          <div class="headline">
+            <div class="top-line">Illustrator</div>
+            <div class="mid-line"></div>
+          </div>
         </div>
       </div>
     </section>
     <!-- end Skills -->
-
+    <!-- start contact  -->
+    <section class="curved rotate"></section>
+    <div class="contact">
+      <h2 class="headline">Contact</h2>
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <form action="post" id="form">
+          <input id="name" type="text" placeholder="NAME" />
+          <input id="email" type="text" placeholder="E-MAIL" />
+          <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <input id="submit" type="submit" value="Send !" />
+        </form>
+      </div>
+    </div>
+    <!-- end contact  -->
+    <!-- start footer  -->
+    <div class="footer">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="images/logo-main-color.png" alt="" />
+          <span>Sitescodes</span>
+        </a>
+        <div class="social">
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <a href="mailto:info@sitescodes.com">info@sitescodes.com</a>
+            <a href="mailto:support@sitescodes.com">support@sitescodes.com</a>
+          </div>
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone Number</h4>
+            <a href="https://wa.me/+201156513881">+201156513881</a>
+            <a href="https://wa.me/+201288585146">+201288585146</a>
+            <a href="https://wa.me/+201119216865">+201119216865</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <h4>Facebook</h4>
+            <a href="https://www.facebook.com/sitescodes">Sitescodes</a>
+          </div>
+        </div>
+      </div>
+      <h4>
+        Made With Love By Sitescodes, Copyrights © 2020-2022 All Right Reserved
+      </h4>
+    </div>
+    <!-- end footer  -->
     <script src="javascript/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
