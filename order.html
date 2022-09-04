@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +72,34 @@
           <input id="name" type="text" placeholder="NAME" />
           <input id="email" type="text" placeholder="E-MAIL" />
           <input id="phone" type="text" placeholder="Phone Number" />
-          <input id="service" type="text" placeholder="Service" />
+          <dl class="dropdown">
+            <dt>
+              <a href="#">
+                <span class="hida"
+                  >Services <i class="fa-solid fa-caret-down"></i
+                ></span>
+                <p class="multiSel"></p>
+              </a>
+            </dt>
+            <dd>
+              <div class="mutliSelect">
+                <ul>
+                  <li>
+                    <input type="checkbox" id="group-0" value="Group" />
+                    <label for="group-0" class="grouplist_id">Group</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="group-1" value="Group 1" />
+                    <label for="group-1" class="grouplist_id">Group 1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="group-2" value="Group 2" />
+                    <label for="group-2" class="grouplist_id">Group 2</label>
+                  </li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
           <textarea id="message" type="text" placeholder="Order"></textarea>
           <input id="submit" type="submit" value="Send !" />
         </form>
@@ -107,6 +139,53 @@
       </h4>
     </div>
     <!-- end footer  -->
+    <script>
+      $(".dropdown dt a").on("click", function () {
+        $(".dropdown dd ul").slideToggle("fast");
+      });
+
+      $(".dropdown dd ul li a").on("click", function () {
+        $(".dropdown dd ul").hide();
+      });
+
+      function getSelectedValue(id) {
+        return $("#" + id)
+          .find("dt a span.value")
+          .html();
+      }
+
+      $(document).bind("click", function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dropdown"))
+          $(".dropdown dd ul").hide();
+      });
+
+      $('.mutliSelect input[type="checkbox"]').on("click", function () {
+        var title = $(this)
+            .closest(".mutliSelect")
+            .find('input[type="checkbox"]')
+            .val(),
+          title = $(this).val() + ",";
+
+        if ($(this).is(":checked")) {
+          var html = '<span title="' + title + '">' + title + "</span>";
+          $(".multiSel").append(html);
+          $(".hida").hide();
+        } else {
+          $('span[title="' + title + '"]').remove();
+          var ret = $(".hida");
+          $(".dropdown dt a").append(ret);
+        }
+        if ($(".multiSel").is(":empty")) {
+          $(".hida").show();
+        }
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="javascript/main.js"></script>
   </body>
 </html>
