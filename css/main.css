@@ -1342,7 +1342,7 @@ textarea:hover {
 
 .dropdown a,
 .dropdown a:visited {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   outline: none;
   font-size: 12px;
