@@ -1,12 +1,13 @@
 /* start variables */
 :root {
-  --main-color: #02897a;
+  --main-color: #2a2d92;
   --back-color-1: #f7f7f7;
   --back-color-2: #ffffff;
-  --text-color: #22343d;
-  --light-text-color: #22343d85;
+  --text-color: #2a2d92;
+  --light-text-color: #2a2d92;
 }
 .dark-mode {
+  --main-color: #02897a;
   --back-color-1: #28353b;
   --back-color-2: #1f2e35;
   --text-color: #ffffff;
@@ -91,7 +92,7 @@ img {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: var(--text-color);
+  background-color: black;
 }
 body {
   cursor: none;
@@ -336,7 +337,7 @@ header .container .nav .dark {
   -o-transition: all 0.3s;
 }
 .landing .container .links a:hover {
-  background-color: var(--text-color);
+  background-color: white;
   color: var(--main-color);
   transform: translateY(-2px);
   -webkit-transform: translateY(-2px);
@@ -1073,7 +1074,7 @@ textarea:hover {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--light-text-color);
+  /* background: var(--light-text-color); */
 }
 
 /* Handle */
@@ -1328,7 +1329,7 @@ textarea:hover {
 
 .dropdown dd,
 .dropdown dt {
-  margin: 0px;
+  margin: -1px 0px;
   padding: 0px;
 }
 
