@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <link rel="stylesheet" href="css/normalize.css" />
     <script
       src="https://kit.fontawesome.com/3162f5d9b2.js"
       crossorigin="anonymous"
@@ -13,11 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Why SITESCODES</title>
+    <title>Order</title>
   </head>
   <body>
     <!-- start up -->
@@ -60,13 +59,21 @@
       </div>
     </header>
     <!-- end header -->
-    <div class="why">
-      <h2 class="headline">Why SITESCODES</h2>
+    <!-- start contact  -->
+    <div style="padding: 30px 0" class="order">
+      <h2 class="headline">Order</h2>
       <div class="container">
-        <p>Do You Need Cheap & Perfect Website? With Free Hosting & Domain?</p>
-        <p>Yes, You'r In The Right Place, We'v A Premium Service.</p>
+        <form action="post" id="form">
+          <input id="name" type="text" placeholder="NAME" />
+          <input id="email" type="text" placeholder="E-MAIL" />
+          <input id="phone" type="text" placeholder="Phone Number" />
+          <input id="service" type="text" placeholder="Service" />
+          <textarea id="message" type="text" placeholder="Order"></textarea>
+          <input id="submit" type="submit" value="Send !" />
+        </form>
       </div>
     </div>
+    <!-- end contact  -->
     <!-- start footer  -->
     <div class="footer">
       <div class="container">
