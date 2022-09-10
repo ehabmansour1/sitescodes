@@ -7,9 +7,9 @@
   --light-text-color: #2a2d92;
 }
 .dark-mode {
-  --main-color: #02897a;
-  --back-color-1: #28353b;
-  --back-color-2: #1f2e35;
+  --main-color: #39ace7;
+  --back-color-1: #414c50;
+  --back-color-2: #2d383c;
   --text-color: #ffffff;
   --light-text-color: #0b1114c5;
 }
