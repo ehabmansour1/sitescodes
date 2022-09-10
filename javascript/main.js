@@ -48,7 +48,12 @@ document.addEventListener("mousemove", (e) => {
     circleStyle.left = `${e.clientX - circle.offsetWidth / 2}px`;
   });
 });
-
+document.onmouseleave = function () {
+  circle.style.display = "none";
+};
+document.onmouseenter = function () {
+  circle.style.display = "flex";
+};
 // landing video===============================================
 let videoButt = document.querySelector(".open-video");
 let video = document.querySelector(".landing .video");
