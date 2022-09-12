@@ -687,7 +687,7 @@ textarea:hover::focus:-ms-placeholder {
 #form {
   position: relative;
   width: 500px;
-  margin: 50px auto 100px auto;
+  margin: 30px auto 100px auto;
   max-width: 100%;
 }
 
@@ -752,6 +752,16 @@ textarea:hover {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+#error {
+  color: #f00;
+  font-size: 20px;
+  text-align: center;
+}
+#done {
+  color: #25af04;
+  font-size: 20px;
+  text-align: center;
 }
 /* end contact */
 /* start footer  */
@@ -1073,9 +1083,9 @@ textarea:hover {
   width: 10px;
 }
 /* Track */
-::-webkit-scrollbar-track {
-  /* background: var(--light-text-color); */
-}
+/* ::-webkit-scrollbar-track { */
+/* background: var(--light-text-color); */
+/* } */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -1226,7 +1236,6 @@ textarea:hover {
   justify-content: center;
   gap: 7px;
   align-items: center;
-flex-wrap: wrap;
 }
 .portfolio .container .box .skillsbox .skill {
   color: white;
