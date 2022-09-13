@@ -596,7 +596,7 @@ header .container .nav .dark {
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #000000;
+  color: #aca49c;
   font-size: 0.875em;
 }
 
@@ -607,7 +607,7 @@ textarea:focus::-webkit-input-placeholder {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #000000;
+  color: #aca49c;
   font-size: 0.875em;
 }
 
@@ -618,7 +618,7 @@ textarea:focus::-moz-placeholder {
 
 input::placeholder,
 textarea::placeholder {
-  color: #000000;
+  color: #aca49c;
   font-size: 0.875em;
 }
 
@@ -629,7 +629,7 @@ textarea::focus:placeholder {
 
 input::-ms-placeholder,
 textarea::-ms-placeholder {
-  color: #000000;
+  color: #aca49c;
   font-size: 0.875em;
 }
 
@@ -705,10 +705,6 @@ input:not([type="checkbox"]) {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-}
-input[id="captcha"] {
-  margin-top: -5px;
-  border: solid 1px var(--main-color);
 }
 
 input:hover {
