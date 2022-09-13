@@ -64,9 +64,15 @@
       <h2 class="headline">Contact</h2>
       <div class="container">
         <form action="post" id="form">
-          <input id="name" type="text" placeholder="NAME" />
-          <input id="email" type="text" placeholder="E-MAIL" />
-          <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <input required id="name" type="text" placeholder="NAME" />
+          <input required id="email" type="text" placeholder="E-MAIL" />
+          <textarea
+            required
+            id="message"
+            type="text"
+            placeholder="MESSAGE"
+          ></textarea>
+          <input required id="captcha" type="text" placeholder="5+6 ?" />
           <input id="submit" type="submit" value="Send !" />
         </form>
       </div>

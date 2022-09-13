@@ -83,4 +83,18 @@ up.onclick = function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
-//=============================================================
+// captcha =============================================================
+let captcha = document.getElementById("captcha");
+let submit = document.getElementById("submit");
+if (captcha && submit) {
+  let first = Math.floor(Math.random() * 10) + 1;
+  let second = Math.floor(Math.random() * 10) + 1;
+  captcha.setAttribute("placeholder", `${first} + ${second} ?`);
+  submit.onclick = function (e) {
+    if (+captcha.value === first + second) {
+    } else {
+      e.preventDefault();
+      //put error style here
+    }
+  };
+}
