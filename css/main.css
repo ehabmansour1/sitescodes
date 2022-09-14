@@ -1236,6 +1236,7 @@ textarea:hover {
   justify-content: center;
   gap: 7px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .portfolio .container .box .skillsbox .skill {
   color: white;
